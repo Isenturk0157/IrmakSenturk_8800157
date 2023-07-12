@@ -59,6 +59,3 @@ cart_count = driver.find_element("id","nav-cart-count")
 assert cart_count.text == "0"
 # Closing the webdriver
 driver.close()
-
-driver.find_element("xpath","/html/body/div[1]/header/div/div[1]/div[1]/div[1]/a").click()
-assert driver.find_element(By.CSS_SELECTOR, ".hm-icon-label").text == "All"
